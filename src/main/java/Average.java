@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 public class Average {
     /**
@@ -18,6 +19,6 @@ public class Average {
      * @return the average of all the values of nums.
      */
     public double getAvg(int[] nums){
-        return 0;
+        return Arrays.stream(nums).average().orElse(Double.NaN);
     }
 }
